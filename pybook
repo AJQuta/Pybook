@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 if [ ! "$BASH_SOURCE" = "$0" ] ; then
   echo "ERR: script should only be used directly" >&2
   exit 1
