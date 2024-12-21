@@ -2,7 +2,7 @@ import sys
 import os.path
 from main.errorlog import errorlog
 
-if len(sys.argv) < 2:
+if len(sys.argv) < 2 or sys.argv[1] == "-h" or sys.argv[1] == "--help":
     err_message = "ERR: No Arguements Given"
     print(err_message)
     errorlog(os.path.basename(__file__), err_message)
