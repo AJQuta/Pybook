@@ -12,20 +12,20 @@ Used as a command through a shell executable. Can be used solely in shell, but a
 
 ### The Basics
 
-For command help:
+For command help run:
 
-    Run `pybook`.
+    pybook
     
 This will show a list of commands for adding books, deleting books, outputting info of a book, and a few others.
 
-To add a book:
+To add a book run:
 
-    Run `pybook add "<name_of_book>"`.
+    pybook add "<name_of_book>"
     
 This will ask for more input to generate the book in the csv.
 
-To delete a book:
+To delete a book run:
 
-    Run `pybook del "<name_of_book>"`.
+    pybook del "<name_of_book>"
     
 This will ask for confirmation and then delete the book from the csv.
