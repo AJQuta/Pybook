@@ -19,7 +19,7 @@ BOOKS = f"{PYBOOK_PATH}/logs/books.csv"
 ERR = f"{PYBOOK_PATH}/logs/error/error.{date}"
 
 # If Error Reports Should be Made
-DEBUG = False # ! Change this to true for error logs
+DEBUG = True # ! Change this to true for error logs
 
 if not isfile(BOOKS):
     open(BOOKS, "x").close()
