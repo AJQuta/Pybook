@@ -14,7 +14,7 @@ def errorlog(source: str, message: str):
     
 def rotate(errfile: str, limit: int = 10):
     err_dir = os.path.dirname(errfile)
-    err_files = [os.path.join(err_dir, i) for i in os.listdir(err_dir) if not i.startswith(".")]
+    err_files = [os.path.join(err_dir, i) for i in os.listdir(err_dir) if i.startswith("error")]
     err_files.sort(key=lambda x: os.path.getmtime(x))
 
     while len(err_files) > limit:
