@@ -21,6 +21,9 @@ ERR = f"{PYBOOK_PATH}/logs/error/error.{date}"
 # If Error Reports Should be Made
 DEBUG = False # ! Change this to true for error logs
 
+if not isfile(BOOKS):
+    open(BOOKS, "x").close()
+
 if DEBUG and not isfile(ERR):
     open(ERR, "x").close()
     err_file_limit = 10
