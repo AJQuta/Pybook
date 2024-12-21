@@ -10,19 +10,22 @@ Keep track of books being read like a library. Keeps track of the name of the bo
 
 Used as a command through a shell executable. Can be used solely in shell, but also has a GUI version (in progress).
 
-### The Basics:
+### The Basics
 
 For command help:
-    Run `pybook`
 
-    This will show a list of commands for adding books, deleting books, outputting info of a book, and a few others.
+    Run `pybook`.
+    
+This will show a list of commands for adding books, deleting books, outputting info of a book, and a few others.
 
 To add a book:
-    Run `pybook add "<name_of_book>"`.
 
-    This will ask for more input to generate the book in the csv.
+    Run `pybook add "<name_of_book>"`.
+    
+This will ask for more input to generate the book in the csv.
 
 To delete a book:
-    Run `pybook del "<name_of_book>"`.
 
-    This will ask for confirmation and then delete the book from the csv.
+    Run `pybook del "<name_of_book>"`.
+    
+This will ask for confirmation and then delete the book from the csv.
