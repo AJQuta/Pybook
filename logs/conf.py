@@ -10,7 +10,7 @@ date = datetime.date.today()
 ## PyBook Log File Locations
 
 # Export files
-global BOOKS, ERR
+global BOOKS, ERR, DEBUG
 
 # CSV with All Data
 BOOKS = f"{PYBOOK_PATH}/logs/books.csv"
@@ -18,7 +18,9 @@ BOOKS = f"{PYBOOK_PATH}/logs/books.csv"
 # Error Reports
 ERR = f"{PYBOOK_PATH}/logs/error/error.{date}"
 
-if not isfile(ERR):
+DEBUG = False
+
+if DEBUG and not isfile(ERR):
     open(ERR, "x").close()
     err_file_limit = 10
     rotate(ERR, err_file_limit)

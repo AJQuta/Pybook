@@ -5,11 +5,12 @@ def _txtmake(source: str, message: str) -> str:
     return f"{datetime.datetime.now()} - {source}: {message}\n"
 
 def errorlog(source: str, message: str):
-    from logs.conf import ERR
-    if not os.path.isfile(ERR):
+    from logs.conf import ERR, DEBUG
+    if DEBUG and not os.path.isfile(ERR):
         raise FileNotFoundError("Error File not Created Properly")
-    with open(ERR, "a") as e:
-        e.write(_txtmake(source, message))
+    if DEBUG:
+        with open(ERR, "a") as e:
+            e.write(_txtmake(source, message))
     
 def rotate(errfile: str, limit: int = 10):
     err_dir = os.path.dirname(errfile)
