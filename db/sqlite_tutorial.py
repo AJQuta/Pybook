@@ -30,7 +30,7 @@ con.commit()
 
 # * Verify data has been committed
 res = cur.execute("SELECT score FROM movie")
-res.fetchall() # fetch all data received
+print(res.fetchall()) # fetch all data received
 # * Can also consider 'fetchone' as retrieve the first row, and 'fetchall' as retrieve all rows
 
 # * Another way to insert a bunch of data
